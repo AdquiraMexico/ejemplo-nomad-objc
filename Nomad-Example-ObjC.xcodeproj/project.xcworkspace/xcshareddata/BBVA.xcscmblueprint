@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4150560362244FE6A64996CA06651B8B8FB3B661",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C1B244413F050D6092FBDD49EE33071F84E21C69" : 0,
+    "4A5530E3F9B4B11F760459072A9B55680D9C7FA7" : 0,
+    "4150560362244FE6A64996CA06651B8B8FB3B661" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5A042F31-83A6-43FD-9355-FD6805A980AD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C1B244413F050D6092FBDD49EE33071F84E21C69" : "BancomerMovil",
+    "4A5530E3F9B4B11F760459072A9B55680D9C7FA7" : "mPosAPI\/",
+    "4150560362244FE6A64996CA06651B8B8FB3B661" : "API_Framework\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BBVA",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BBVA.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/zertuche\/flap_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4150560362244FE6A64996CA06651B8B8FB3B661"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/zertuche\/mpos-ios-api.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A5530E3F9B4B11F760459072A9B55680D9C7FA7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/zertuche\/bbva_pagos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C1B244413F050D6092FBDD49EE33071F84E21C69"
+    }
+  ]
+}
