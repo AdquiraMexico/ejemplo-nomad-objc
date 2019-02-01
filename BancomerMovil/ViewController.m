@@ -16,7 +16,6 @@
     
     BOOL        isEmvProcess;
     NSArray     *months_array;
-    UIButton *back_button;
     UIButton *walker_button;
     UIButton *nomad_button;
     
@@ -30,24 +29,22 @@
 - (void)viewDidAppear:(BOOL)animated{
  
     
-    
+    //INIT the BBVA API
     
     self.bbvaAPI = [[BBVANomad alloc]init];
     [self.bbvaAPI initBBVANomad];
     
+    //Delegate the API to Self
     self.bbvaAPI.delegate = self;
-    //[self.bbvaAPI ];
-   // [self.bbvaAPI stopWalker];
-    [self.bbvaAPI disconnectWalker];
 
+    
+    //Setup Developement enviroment for this Exaple
+    
     env         = @"D";
     self.bbvaAPI.env = @"D";
     servicio    = @"773";
     msi         = @"0";
-    printf("hello");
-    //self.bbvaAPI.env = [[NSUserDefaults standardUserDefaults]stringForKey:@"env"];
-    //self.bbvaAPI.token = [[NSUserDefaults standardUserDefaults]stringForKey:@"token"];
-    // [self createPopUpWithSuccess:true andMessage:@"Modo Developer"];
+    
     
 }
 - (void)viewDidLoad {
@@ -58,6 +55,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
+    //Auto Login for testing
     [self.bbvaAPI loginWithUsername:@"v1" andPassword:@"v1" andEnv:@"D"];
     [[NSUserDefaults standardUserDefaults] setObject:env forKey:@"env"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -73,6 +71,8 @@
     [locationManager startUpdatingLocation];
     
    
+    //ADD Button for search PRESS ONLY ONE TIME
+    
     [Boton addTarget:self action:@selector(scanBluetooth) forControlEvents:UIControlEventTouchDown];
     
     [self toDevMode];
@@ -151,7 +151,12 @@
     //[self createPopUpWithSuccess:FALSE andMessage:message];
 }
 - (void)connectionResultWithSuccess:(BOOL)success andResult:(NSArray*)result{
-    printf("conectado");
+    //Back After button found the nomad device
+
+    printf("Conected");
+    
+    //The process continues as the last API
+    
     if (success) {
         btdevices = result;
         printf("Results:");
